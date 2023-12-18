@@ -1,4 +1,5 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/JingIsCoding/number)](https://goreportcard.com/report/github.com/JingIsCoding/number)
+[![Go Reference](https://pkg.go.dev/badge/github.com/JingIsCoding/number.svg)](https://pkg.go.dev/github.com/JingIsCoding/number)
 
 <!-- Go number -->
 ## Go number
