@@ -1,25 +1,29 @@
+<!-- Go number -->
 ## Go number
 A convenient abstraction to deal with basic arithmetic operation across different number types and precisions
 
-## What problems we are trying to solve
-1. Type casting when doing arithmetic operation amoung different number types or precisions \
-Instead of 
+<!-- What problems we are trying to solve -->
+### What problems we are trying to solve
+
+##### 1.Type casting when doing arithmetic operation amoung different number types or precisions
+
+>Instead of 
 ```go
   var a int = 1
   var b float32 = 1.0
   var c float64 = 2.0
   var d int64 = int64(float64((float32(a) + b)) * float64(c))
 ```
-  You can do
+>You can do
 ```go
   var a int = 1
   var b float32 = 1.0
   var c float64 = 2.0
   var d = number.Of(a).Add(b).Multiply(c).GetInt()
 ```
-2. Error handing when divide by 0 \
-   when integer number divide by 0 it will panic with error `runtime error: integer divide by zero`\
-   whereas float number divide by 0 will result in a value of +Inf or -Inf\
+##### 2.Error handing when divide by 0
+In Golang, when integer number divide by 0 it will panic with error `runtime error: integer divide by zero`\
+whereas float number divide by 0 will result in a value of +Inf or -Inf
    
 Now we make any division operation returns an error of type `number.DivideByZeroError`
 ```go
@@ -30,7 +34,7 @@ Now we make any division operation returns an error of type `number.DivideByZero
     log.Panicln(err)
   }
 ```
-3. Convienet method for common operation
+##### 3.Convienet method for common operation
 ```go
   var a number.Number = number.Of(0.5)
   var b number.Number = a.RoundUp()
