@@ -48,6 +48,9 @@ Now we make any division operation returns an error of type `number.DivideByZero
 go get -u github.com/JingIsCoding/number
 ```
 
+## Credits
+Thanks for @xchen1189 for co-creating this project.
+
 ## Feedback
 Feel free to submit feedback to the issue or submit a PR for bug fix or feature extension.
 
