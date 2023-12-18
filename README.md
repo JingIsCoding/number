@@ -1,3 +1,5 @@
+[![Go Report Card](https://goreportcard.com/badge/github.com/JingIsCoding/number)](https://goreportcard.com/report/github.com/JingIsCoding/number)
+
 <!-- Go number -->
 ## Go number
 A convenient abstraction to deal with basic arithmetic operation across different number types and precisions
